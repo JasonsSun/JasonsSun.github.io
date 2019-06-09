@@ -740,6 +740,7 @@
 
 
 
+<!--
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
@@ -752,17 +753,52 @@
     });
     new Valine({
         el: '#comments' ,
-        verify: false,
-        notify: false,
+        verify: true,
+        notify: true,
         appId: 'noPf0KmqpjIqqVUJ6BJQ1gNJ-gzGzoHsz',
         appKey: 'Nd2YlPqbiemTCkMKXKOAXpq8',
         placeholder: 'ヾﾉ≧∀≦)o 来呀！吐槽一番吧！',
-        avatar:'mm',
+        avatar:'hide',
         guest_info:guest,
         pageSize:'10' || 10,
     });
   </script>
 
+-->
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unjkp.com/valine/dist/Valine.min.js"></script>  //删除Valine核心代码库外链调用
+  <script src="/js/src/valine.js"></script>  //调用刚下载的本地文件以加速加载速度
+
+    //这里改为从本地加载
+  
+  <script src="/js/src/valine.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'noPf0KmqpjIqqVUJ6BJQ1gNJ-gzGzoHsz',
+        appKey: 'Nd2YlPqbiemTCkMKXKOAXpq8',
+        placeholder: 'ヾﾉ≧∀≦)o 来呀！吐槽一番吧！',
+        avatar:'hide',
+        guest_info:['nick'] ,  //评论者只需要提供评论的昵称即可
+        pageSize:'10' || 10,
+    });
+    //增加以下六行代码去除 power by valine
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+  </script>
 
 
   
