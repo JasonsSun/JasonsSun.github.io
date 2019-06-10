@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-09T08:08:56.410Z</updated>
+  <updated>2019-06-10T14:34:47.728Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>人生感悟</title>
+    <link href="http://yoursite.com/2019/06/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2019/06/10/我的第一篇博客文章/</id>
+    <published>2019-06-10T13:41:48.000Z</published>
+    <updated>2019-06-10T14:34:47.728Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/themes/next/source/images/first.png" alt></p><h1 id="萌芽熊"><a href="#萌芽熊" class="headerlink" title="萌芽熊"></a>萌芽熊</h1><p>生活往往把我们压得喘不过气来，<br>但谁不是一边想着放弃，<br>一边继续努力。</p><p>愿你努力工作后，<br>不忘享受生活；<br>也希望你脚踏实地时，<br>记得仰望星空。</p><hr><hr><p>我们无力改变这个世界，<br>但可以坚持自己想守护的东西，<br>比如那个喜欢的人，<br>或那件一心想做的事。</p><p>正是这份守护的渴望，<br>让我们变得更加强大。</p><p><img src="/themes/next/source/images/love.jpeg" alt></p><hr><hr><p><strong>轻轻的我走了,正如我轻轻的来，我挥一挥衣袖，不带走一片云彩！</strong><br>——我要走了<br>——没关系，我等你<br>——我好难过<br>——开心点，我陪你<br>——我想一个人呆会<br>——好的，再见<br>——你好烦<br>——sorry,我这就离开<br>——对不起….<br>——没关系，我根本不在乎你 等待只是放弃的开始，<br>陪伴只是离开的理由， 珍惜只是背叛的结束，<br>喜欢你只是一句玩笑，别当真了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/themes/next/source/images/first.png&quot; alt&gt;&lt;/p&gt;
+&lt;h1 id=&quot;萌芽熊&quot;&gt;&lt;a href=&quot;#萌芽熊&quot; class=&quot;headerlink&quot; title=&quot;萌芽熊&quot;&gt;&lt;/a&gt;萌芽熊&lt;/h1&gt;&lt;p&gt;生活往往把我
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="体会" scheme="http://yoursite.com/tags/%E4%BD%93%E4%BC%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
