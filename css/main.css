@@ -1915,7 +1915,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #61ff0f;
+  background: #1cff12;
 }
 .feed-link,
 .chat {
@@ -2102,10 +2102,13 @@ pre .javascript .function {
 .footer-inner {
   text-align: center;
 }
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
+}
 .with-love {
   display: inline-block;
   margin: 0 5px;
-  color: #808080;
+  color: #FF0000;
 }
 .powered-by,
 .theme-info {
