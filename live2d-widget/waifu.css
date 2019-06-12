@@ -1,8 +1,8 @@
 #waifu {
 	position: fixed;
 	bottom: -3px;
-	right: 30;
-	z-index: 1;
+	right: 30px;
+	z-index: -1;
 	line-height: 0;
 	transition: bottom .3s ease-in-out;
 }
