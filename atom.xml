@@ -5,9 +5,9 @@
   <subtitle>一个人的滋味...</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://jasonssun.github.io/"/>
   <updated>2019-06-10T14:44:30.339Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://jasonssun.github.io/</id>
   
   <author>
     <name>Jason</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>人生感悟</title>
-    <link href="http://yoursite.com/2019/06/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2019/06/10/我的第一篇博客文章/</id>
+    <link href="https://jasonssun.github.io/2019/06/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    <id>https://jasonssun.github.io/2019/06/10/我的第一篇博客文章/</id>
     <published>2019-06-10T13:41:48.000Z</published>
     <updated>2019-06-10T14:44:30.339Z</updated>
     
@@ -35,19 +35,19 @@
     
     </summary>
     
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://jasonssun.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://jasonssun.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="体会" scheme="http://yoursite.com/tags/%E4%BD%93%E4%BC%9A/"/>
+      <category term="体会" scheme="https://jasonssun.github.io/tags/%E4%BD%93%E4%BC%9A/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/06/09/hello-world/"/>
-    <id>http://yoursite.com/2019/06/09/hello-world/</id>
+    <link href="https://jasonssun.github.io/2019/06/09/hello-world/"/>
+    <id>https://jasonssun.github.io/2019/06/09/hello-world/</id>
     <published>2019-06-09T08:08:56.409Z</published>
     <updated>2019-06-09T08:08:56.410Z</updated>
     
