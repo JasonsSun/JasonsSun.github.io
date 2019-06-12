@@ -605,7 +605,7 @@
 <script>
 function show_date_time(){
 window.setTimeout("show_date_time()", 1000);
-BirthDay=new Date("06/27/2019 08:13:14");
+BirthDay=new Date("03/12/1995 08:13:14");
 today=new Date();
 timeold=(today.getTime()-BirthDay.getTime());
 sectimeold=timeold/1000
@@ -618,7 +618,7 @@ hrsold=setzero(Math.floor(e_hrsold));
 e_minsold=(e_hrsold-hrsold)*60;
 minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
 seconds=setzero(Math.floor((e_minsold-minsold)*60));
-document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+document.getElementById('days').innerHTML="本博客已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
 }
 function setzero(i){
 if (i<10)
@@ -636,7 +636,7 @@ show_date_time();
 <script>
 function show_date_time(){
 window.setTimeout("show_date_time()", 1000);
-BirthDay=new Date("06/27/2019 08:13:14");
+BirthDay=new Date("03/12/1995 08:13:14");
 today=new Date();
 timeold=(today.getTime()-BirthDay.getTime());
 sectimeold=timeold/1000
@@ -649,7 +649,7 @@ hrsold=setzero(Math.floor(e_hrsold));
 e_minsold=(e_hrsold-hrsold)*60;
 minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
 seconds=setzero(Math.floor((e_minsold-minsold)*60));
-document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+document.getElementById('days').innerHTML="本博客已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
 }
 function setzero(i){
 if (i<10)
@@ -718,9 +718,25 @@ show_date_time();
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
   
 
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
   
 </div>
 
