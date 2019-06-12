@@ -1976,7 +1976,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0d744d;
+  background: #ff0411;
 }
 .feed-link,
 .chat {
@@ -3253,6 +3253,12 @@ body {
 }
 .site-meta {
   background: #0684bd;
+}
+#days {
+  display: block;
+  color: #07b39b;
+  font-size: 13px;
+  margin-top: 15px;
 }
 @media screen and (min-width: 1200px) {
   body {
