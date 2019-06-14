@@ -1290,7 +1290,7 @@ pre .javascript .function {
 }
 .github-corner > svg {
   fill: #222;
-  color: #fff;
+  color: #0684bd;
   position: absolute;
   top: 0;
   border: 0;
@@ -2012,7 +2012,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8cff61;
+  background: #e0ffff;
 }
 .feed-link,
 .chat {
