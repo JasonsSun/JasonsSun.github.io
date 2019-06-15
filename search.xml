@@ -4,6 +4,9 @@
     <title><![CDATA[Hexo搭建博客NexT主题之在线聊天DaoVoice配置]]></title>
     <url>%2F2019%2F06%2F15%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B9%8B%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9DaoVoice%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[效果图: 使用ThemeNexT主题集成DaoVoice与客户沟通的绝佳工具1.首先点击DaoVoice到官网注册账号 踩坑第一步：点击官网注册账号跳转链接会变。2. 跳转至DaoCloud页面注册3. 注册成功后，点击我发出的邀请码或手动输入邀请码：4da49702 进入下一步。 提示：人数最多不能 &gt;5000人（5000人以上收费） 点击创建后，会直接跳转到控制台如图所示： 得到app_id方便操作以下配置主题_config.yml文件中的DaoVoice插件。 配置主题1.修改head.swig修改/themes/next/layout/_partials/head.swig文件，添加内容（直接复制即可）如下： 代码如下： 123456789&#123;% if theme.daovoice %&#125; &lt;script&gt; (function(i,s,o,g,r,a,m)&#123;i["DaoVoiceObject"]=r;i[r]=i[r]||function()&#123;(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)&#125;)(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice") daovoice('init', &#123; app_id: "&#123;&#123;theme.daovoice_app_id&#125;&#125;" &#125;); daovoice('update'); &lt;/script&gt;&#123;% endif %&#125; 2. 主题配置文件在_config.yml文件末尾添加内容： 123# Online contact daovoice: truedaovoice_app_id: 这里输入前面获取的app_id Over Ending（结束语）DaoVoice配置告一段落，其余的DaoVoice控制台窗口大小、颜色、图标……etc自己去探索吧!注:如果还有不了解的，可以在右下方与博主在线沟通]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>NexT 7.0+</tag>
