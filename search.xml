@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo搭建博客NexT主题之AddThis分享文章的配置]]></title>
+    <url>%2F2019%2F06%2F15%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B9%8BAddThis%E5%88%86%E4%BA%AB%E6%96%87%E7%AB%A0%E7%9A%84%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[效果图： 使用ThemeNexT主题集成AddThis- Turn your visitors into engagedcustomers.AddThis官网配置1.首先点击AddThis至官网注册账号如下图： 2.进入注册界面后进行住注册，当然国家country当然是选择China啦！ 3.选择一种工具类型（Select a Tool）,我们选择第一种（Share Button）分享按钮。 3.选择显示样式(Select a Tool Type),AddThis提供了7种显示样式,你可以更加左边菜单栏点击,右边会自动显示你选择的相应样式。值得注意的是。在其右上角可以切换PC和Phone显示 4.选择Continue之后进入分享样式设计界面。第一个可以设计你要显示的主要应用，第二个设计在手机上的显示样式和大小，第三个设计分享计数器针对个人等选项，第四个设计分享组合的位置，宽度，偏移量，第五个用来设置该分享是否要显示在主页上等配置。如图： 5.设置完成后进入该页面选择仅代码视图打开，可以看到生成的代码，从而获取主题配置文件所需add_this_id也就是当前页面的pubid。 6.点击之前页面左上角的工具菜单栏进行配置，红框中即为刚才配置的分享按钮，点击箭头指向的定位规则配置要显示的网站。 7.点击定位规则添加定位规则配置，选择最右边的获取分享按钮，点击观众开始进行你想要的网站配置信息，设置完成后保存并激活，官网配置完成。如图： 配置主题文件在_config.yml文件Ctrl+F 搜索 add_this_id配置官网中获得的pubid（建议RA采用小写ra） 配置如图： Over Ending（结束语）AddThis 配置告一段落，其余的AddThis 请在官网自行配置，自己去探索吧!注:如果还有不了解的，可以在右下方与博主在线沟通]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT 7.0+</tag>
+        <tag>AddThis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo搭建博客NexT主题之在线聊天DaoVoice配置]]></title>
     <url>%2F2019%2F06%2F15%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B9%8B%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9DaoVoice%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[效果图: 使用ThemeNexT主题集成DaoVoice与客户沟通的绝佳工具1.首先点击DaoVoice到官网注册账号 踩坑第一步：点击官网注册账号跳转链接会变。2. 跳转至DaoCloud页面注册3. 注册成功后，点击我发出的邀请码或手动输入邀请码：4da49702 进入下一步。 提示：人数最多不能 &gt;5000人（5000人以上收费） 点击创建后，会直接跳转到控制台如图所示： 得到app_id方便操作以下配置主题_config.yml文件中的DaoVoice插件。 配置主题1.修改head.swig修改/themes/next/layout/_partials/head.swig文件，添加内容（直接复制即可）如下： 代码如下： 123456789&#123;% if theme.daovoice %&#125; &lt;script&gt; (function(i,s,o,g,r,a,m)&#123;i["DaoVoiceObject"]=r;i[r]=i[r]||function()&#123;(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)&#125;)(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice") daovoice('init', &#123; app_id: "&#123;&#123;theme.daovoice_app_id&#125;&#125;" &#125;); daovoice('update'); &lt;/script&gt;&#123;% endif %&#125; 2. 主题配置文件在_config.yml文件末尾添加内容： 123# Online contact daovoice: truedaovoice_app_id: 这里输入前面获取的app_id Over Ending（结束语）DaoVoice配置告一段落，其余的DaoVoice控制台窗口大小、颜色、图标……etc自己去探索吧!注:如果还有不了解的，可以在右下方与博主在线沟通]]></content>

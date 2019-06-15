@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
-  <updated>2019-06-15T09:58:47.768Z</updated>
+  <updated>2019-06-15T14:01:54.268Z</updated>
   <id>https://jasonssun.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo搭建博客NexT主题之AddThis分享文章的配置</title>
+    <link href="https://jasonssun.github.io/2019/06/15/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B9%8BAddThis%E5%88%86%E4%BA%AB%E6%96%87%E7%AB%A0%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>https://jasonssun.github.io/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/</id>
+    <published>2019-06-15T12:45:52.000Z</published>
+    <updated>2019-06-15T14:01:54.268Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="效果图："><a href="#效果图：" class="headerlink" title="效果图："></a>效果图：</h2><p><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/AddThisShow.png" alt> </p><h2 id="使用ThemeNexT主题集成AddThis-Turn-your-visitors-into-engagedcustomers"><a href="#使用ThemeNexT主题集成AddThis-Turn-your-visitors-into-engagedcustomers" class="headerlink" title="使用ThemeNexT主题集成AddThis- Turn your visitors into engagedcustomers."></a>使用ThemeNexT主题集成AddThis- Turn your visitors into engagedcustomers.</h2><h2 id="AddThis官网配置"><a href="#AddThis官网配置" class="headerlink" title="AddThis官网配置"></a>AddThis官网配置</h2><h3 id="1-首先点击AddThis至官网注册账号"><a href="#1-首先点击AddThis至官网注册账号" class="headerlink" title="1.首先点击AddThis至官网注册账号"></a>1.首先点击<a href="https://www.addthis.com/" target="_blank" rel="noopener">AddThis</a>至官网注册账号</h3><p>如下图：<br><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p1.png" alt> </p><h3 id="2-进入注册界面后进行住注册，当然国家country当然是选择China啦！"><a href="#2-进入注册界面后进行住注册，当然国家country当然是选择China啦！" class="headerlink" title="2.进入注册界面后进行住注册，当然国家country当然是选择China啦！"></a>2.进入注册界面后进行住注册，当然国家country当然是选择China啦！</h3><p><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p2.png" alt> </p><h3 id="3-选择一种工具类型（Select-a-Tool）-我们选择第一种（Share-Button）分享按钮。"><a href="#3-选择一种工具类型（Select-a-Tool）-我们选择第一种（Share-Button）分享按钮。" class="headerlink" title="3.选择一种工具类型（Select a Tool）,我们选择第一种（Share Button）分享按钮。"></a>3.选择一种工具类型（Select a Tool）,我们选择第一种（Share Button）分享按钮。</h3><p><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p3.png" alt> </p><h3 id="3-选择显示样式-Select-a-Tool-Type-AddThis提供了7种显示样式-你可以更加左边菜单栏点击-右边会自动显示你选择的相应样式。值得注意的是。在其右上角可以切换PC和Phone显示"><a href="#3-选择显示样式-Select-a-Tool-Type-AddThis提供了7种显示样式-你可以更加左边菜单栏点击-右边会自动显示你选择的相应样式。值得注意的是。在其右上角可以切换PC和Phone显示" class="headerlink" title="3.选择显示样式(Select a Tool Type),AddThis提供了7种显示样式,你可以更加左边菜单栏点击,右边会自动显示你选择的相应样式。值得注意的是。在其右上角可以切换PC和Phone显示"></a>3.选择显示样式(Select a Tool Type),<code>AddThis</code>提供了7种显示样式,你可以更加左边菜单栏点击,右边会自动显示你选择的相应样式。值得注意的是。在其右上角可以切换<code>PC</code>和<code>Phone</code>显示</h3><p><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p4.png" alt> </p><h3 id="4-选择Continue之后进入分享样式设计界面。第一个可以设计你要显示的主要应用，第二个设计在手机上的显示样式和大小，第三个设计分享计数器针对个人等选项，第四个设计分享组合的位置，宽度，偏移量，第五个用来设置该分享是否要显示在主页上等配置。"><a href="#4-选择Continue之后进入分享样式设计界面。第一个可以设计你要显示的主要应用，第二个设计在手机上的显示样式和大小，第三个设计分享计数器针对个人等选项，第四个设计分享组合的位置，宽度，偏移量，第五个用来设置该分享是否要显示在主页上等配置。" class="headerlink" title="4.选择Continue之后进入分享样式设计界面。第一个可以设计你要显示的主要应用，第二个设计在手机上的显示样式和大小，第三个设计分享计数器针对个人等选项，第四个设计分享组合的位置，宽度，偏移量，第五个用来设置该分享是否要显示在主页上等配置。"></a>4.选择Continue之后进入分享样式设计界面。第一个可以设计你要显示的主要应用，第二个设计在手机上的显示样式和大小，第三个设计分享计数器针对个人等选项，第四个设计分享组合的位置，宽度，偏移量，第五个用来设置该分享是否要显示在主页上等配置。</h3><p>如图：<br><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p5.png" alt> </p><h3 id="5-设置完成后进入该页面选择仅代码视图打开，可以看到生成的代码，从而获取主题配置文件所需add-this-id也就是当前页面的pubid。"><a href="#5-设置完成后进入该页面选择仅代码视图打开，可以看到生成的代码，从而获取主题配置文件所需add-this-id也就是当前页面的pubid。" class="headerlink" title="5.设置完成后进入该页面选择仅代码视图打开，可以看到生成的代码，从而获取主题配置文件所需add_this_id也就是当前页面的pubid。"></a>5.设置完成后进入该页面选择仅代码视图打开，可以看到生成的代码，从而获取主题配置文件所需<code>add_this_id</code>也就是当前页面的<code>pubid</code>。</h3><p><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p6.png" alt> </p><h3 id="6-点击之前页面左上角的工具菜单栏进行配置，红框中即为刚才配置的分享按钮，点击箭头指向的定位规则配置要显示的网站。"><a href="#6-点击之前页面左上角的工具菜单栏进行配置，红框中即为刚才配置的分享按钮，点击箭头指向的定位规则配置要显示的网站。" class="headerlink" title="6.点击之前页面左上角的工具菜单栏进行配置，红框中即为刚才配置的分享按钮，点击箭头指向的定位规则配置要显示的网站。"></a>6.点击之前页面左上角的工具菜单栏进行配置，红框中即为刚才配置的分享按钮，点击箭头指向的定位规则配置要显示的网站。</h3><p><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p7.png" alt> </p><h3 id="7-点击定位规则添加定位规则配置，选择最右边的获取分享按钮，点击观众开始进行你想要的网站配置信息，设置完成后保存并激活，官网配置完成。"><a href="#7-点击定位规则添加定位规则配置，选择最右边的获取分享按钮，点击观众开始进行你想要的网站配置信息，设置完成后保存并激活，官网配置完成。" class="headerlink" title="7.点击定位规则添加定位规则配置，选择最右边的获取分享按钮，点击观众开始进行你想要的网站配置信息，设置完成后保存并激活，官网配置完成。"></a>7.点击定位规则添加定位规则配置，选择最右边的获取分享按钮，点击观众开始进行你想要的网站配置信息，设置完成后保存并激活，官网配置完成。</h3><p>如图：<br><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p8.png" alt><br><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p9.png" alt><br><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p10.png" alt> </p><h2 id="配置主题文件"><a href="#配置主题文件" class="headerlink" title="配置主题文件"></a>配置主题文件</h2><p>在<code>_config.yml</code>文件Ctrl+F 搜索 <code>add_this_id</code>配置官网中获得的<code>pubid</code>（建议RA采用小写ra）</p><p>配置如图：<br><img src="/2019/06/15/Hexo搭建博客NexT主题之AddThis分享文章的配置/p11.png" alt> </p><h2 id="Over-Ending（结束语）"><a href="#Over-Ending（结束语）" class="headerlink" title="Over Ending（结束语）"></a>Over Ending（结束语）</h2><h4 id="AddThis-配置告一段落，其余的AddThis-请在官网自行配置，自己去探索吧"><a href="#AddThis-配置告一段落，其余的AddThis-请在官网自行配置，自己去探索吧" class="headerlink" title="AddThis 配置告一段落，其余的AddThis 请在官网自行配置，自己去探索吧!"></a>AddThis 配置告一段落，其余的AddThis 请在官网自行配置，自己去探索吧!</h4><h3 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h3><p><strong>如果还有不了解的，可以在右下方与博主在线沟通</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="个人博客" scheme="https://jasonssun.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="https://jasonssun.github.io/tags/Hexo/"/>
+    
+      <category term="NexT 7.0+" scheme="https://jasonssun.github.io/tags/NexT-7-0/"/>
+    
+      <category term="AddThis" scheme="https://jasonssun.github.io/tags/AddThis/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo搭建博客NexT主题之在线聊天DaoVoice配置</title>
