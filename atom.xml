@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
-  <updated>2019-06-15T07:03:24.726Z</updated>
+  <updated>2019-06-15T07:20:10.784Z</updated>
   <id>https://jasonssun.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://jasonssun.github.io/2019/06/15/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B9%8B%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9DaoVoice%E9%85%8D%E7%BD%AE/"/>
     <id>https://jasonssun.github.io/2019/06/15/Hexo搭建博客NexT主题之在线聊天DaoVoice配置/</id>
     <published>2019-06-15T05:58:19.000Z</published>
-    <updated>2019-06-15T07:03:24.726Z</updated>
+    <updated>2019-06-15T07:20:10.784Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图:"></a>效果图:</h1><p><img src="/.io//daovoiceShow.png" alt> </p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图:"></a>效果图:</h1><p><img src="/daovoiceShow.png" alt> </p>]]></content>
     
     <summary type="html">
     
