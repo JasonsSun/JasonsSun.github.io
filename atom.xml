@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
-  <updated>2019-06-15T19:29:58.672Z</updated>
+  <updated>2019-06-17T12:26:15.922Z</updated>
   <id>https://jasonssun.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置</title>
+    <link href="https://jasonssun.github.io/2019/06/17/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E4%B9%8B%E5%B5%8C%E5%85%A5%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E8%A7%86%E9%A2%91%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/"/>
+    <id>https://jasonssun.github.io/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/</id>
+    <published>2019-06-17T11:36:45.000Z</published>
+    <updated>2019-06-17T12:26:15.922Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="效果图："><a href="#效果图：" class="headerlink" title="效果图："></a>效果图：</h2><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/bilishow.png" alt></p><h2 id="上传哔哩哔哩视频"><a href="#上传哔哩哔哩视频" class="headerlink" title="上传哔哩哔哩视频"></a>上传哔哩哔哩视频</h2><h3 id="1-注册登录哔哩哔哩"><a href="#1-注册登录哔哩哔哩" class="headerlink" title="1.注册登录哔哩哔哩"></a>1.注册登录哔哩哔哩</h3><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/bilibili.png" alt></p><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/denglu.png" alt></p><h3 id="2-点击右上角投稿并上传视频-注意请避免图中位置视频审核拥挤，审核时间较长。"><a href="#2-点击右上角投稿并上传视频-注意请避免图中位置视频审核拥挤，审核时间较长。" class="headerlink" title="2.点击右上角投稿并上传视频,注意请避免图中位置视频审核拥挤，审核时间较长。"></a>2.点击右上角投稿并上传视频,注意请避免图中位置视频审核拥挤，审核时间较长。</h3><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/ps1.png" alt></p><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/ps2.png" alt></p><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/ps3.png" alt></p><h2 id="获取哔哩哔哩视频链接"><a href="#获取哔哩哔哩视频链接" class="headerlink" title="获取哔哩哔哩视频链接"></a>获取哔哩哔哩视频链接</h2><h3 id="1-找到你想要嵌入的视频地址。"><a href="#1-找到你想要嵌入的视频地址。" class="headerlink" title="1.找到你想要嵌入的视频地址。"></a>1.找到你想要嵌入的视频地址。</h3><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/p1.png" alt></p><h3 id="2-点击分享按钮，弹出分享框，会出现视频地址和嵌入代码链接（此处复制嵌入链接）。"><a href="#2-点击分享按钮，弹出分享框，会出现视频地址和嵌入代码链接（此处复制嵌入链接）。" class="headerlink" title="2.点击分享按钮，弹出分享框，会出现视频地址和嵌入代码链接（此处复制嵌入链接）。"></a>2.点击分享按钮，弹出分享框，会出现视频地址和嵌入代码链接（此处复制嵌入链接）。</h3><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/p3.png" alt></p><h3 id="3-此处博主将该视频嵌入关于我的页面当中为例（嵌入页面随意），将从哔哩哔哩复制的嵌入链接粘贴到xxx-md文件当中。"><a href="#3-此处博主将该视频嵌入关于我的页面当中为例（嵌入页面随意），将从哔哩哔哩复制的嵌入链接粘贴到xxx-md文件当中。" class="headerlink" title="3.此处博主将该视频嵌入关于我的页面当中为例（嵌入页面随意），将从哔哩哔哩复制的嵌入链接粘贴到xxx.md文件当中。"></a>3.此处博主将该视频嵌入关于我的页面当中为例（嵌入页面随意），将从哔哩哔哩复制的嵌入链接粘贴到xxx.md文件当中。</h3><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/p4.png" alt></p><p> <img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/p5.png" alt></p><h4 id="注：此处原样粘贴会出现页面不兼容情况"><a href="#注：此处原样粘贴会出现页面不兼容情况" class="headerlink" title="注：此处原样粘贴会出现页面不兼容情况"></a>注：此处原样粘贴会出现页面不兼容情况</h4><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/p7.png" alt></p><h4 id="在复制的哔哩哔哩链接中输入以下代码方可兼容页面"><a href="#在复制的哔哩哔哩链接中输入以下代码方可兼容页面" class="headerlink" title="在复制的哔哩哔哩链接中输入以下代码方可兼容页面"></a><strong>在复制的哔哩哔哩链接中输入以下代码方可兼容页面</strong></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">style="width: 100%; height: 500px; max-width: 100%；align:center; padding:20px 0;"</span><br></pre></td></tr></table></figure><h2 id="附加："><a href="#附加：" class="headerlink" title="附加："></a>附加：</h2><h4 id="嵌入优酷视频"><a href="#嵌入优酷视频" class="headerlink" title="嵌入优酷视频"></a>嵌入优酷视频</h4><h5 id="1-登录网页版-优酷官网"><a href="#1-登录网页版-优酷官网" class="headerlink" title="1.登录网页版 优酷官网"></a>1.登录网页版 优酷官网</h5><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/y1.png" alt></p><h5 id="2-点开已上传视频，并复制链接，链接粘贴位置同上，此处不用修改页面适应宽度"><a href="#2-点开已上传视频，并复制链接，链接粘贴位置同上，此处不用修改页面适应宽度" class="headerlink" title="2.点开已上传视频，并复制链接，链接粘贴位置同上，此处不用修改页面适应宽度"></a>2.点开已上传视频，并复制链接，链接粘贴位置<code>同上</code>，<strong>此处不用修改页面适应宽度</strong></h5><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/y2.png" alt></p><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/y3.png" alt></p><h4 id="嵌入YouTube视频（注：使用该功能需要梯子）"><a href="#嵌入YouTube视频（注：使用该功能需要梯子）" class="headerlink" title="嵌入YouTube视频（注：使用该功能需要梯子）"></a>嵌入YouTube视频<code>（注：使用该功能需要梯子）</code></h4><h5 id="获取视频链接方式如下："><a href="#获取视频链接方式如下：" class="headerlink" title="获取视频链接方式如下："></a>获取视频链接方式如下：</h5><ul><li><p>找到你想要插入的视频</p></li><li><p>点击右下角的视频链接</p></li><li><p>复制链接即可，粘贴位置（同上）</p></li><li><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/b1.png" alt></p></li></ul><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/b2.png" alt></p><p><img src="/2019/06/17/Hexo搭建博客NexT主题之嵌入哔哩哔哩视频详细配置/b3.png" alt></p><h2 id="Over-Ending（结束语）"><a href="#Over-Ending（结束语）" class="headerlink" title="Over Ending（结束语）"></a>Over Ending（结束语）</h2><h4 id="clipboard配置告一段落，其余的相关配置-请自行查看官网，去探索吧，少年"><a href="#clipboard配置告一段落，其余的相关配置-请自行查看官网，去探索吧，少年" class="headerlink" title="clipboard配置告一段落，其余的相关配置 请自行查看官网，去探索吧，少年!"></a>clipboard配置告一段落，其余的相关配置 请自行查看官网，去探索吧，少年!</h4><h3 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h3><p><strong>如果还有不了解的，可以在右下方与博主在线沟通</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="个人博客" scheme="https://jasonssun.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="https://jasonssun.github.io/tags/Hexo/"/>
+    
+      <category term="NexT 7.0+" scheme="https://jasonssun.github.io/tags/NexT-7-0/"/>
+    
+      <category term="哔哩哔哩" scheme="https://jasonssun.github.io/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/"/>
+    
+      <category term="视频嵌入" scheme="https://jasonssun.github.io/tags/%E8%A7%86%E9%A2%91%E5%B5%8C%E5%85%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>Naviate 12.0.29 数据库连接工具之安装与激活</title>
