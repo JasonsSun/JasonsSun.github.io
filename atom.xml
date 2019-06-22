@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
-  <updated>2019-06-17T13:31:13.878Z</updated>
+  <updated>2019-06-22T14:21:05.263Z</updated>
   <id>https://jasonssun.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>build时出现Artifact contains illegal characters的解决</title>
+    <link href="https://jasonssun.github.io/2019/06/22/IntelliJ%20IDEA%20build%E6%97%B6%E5%87%BA%E7%8E%B0Artifact%20contains%20illegal%20characters%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
+    <id>https://jasonssun.github.io/2019/06/22/IntelliJ IDEA build时出现Artifact contains illegal characters的解决/</id>
+    <published>2019-06-22T14:20:14.000Z</published>
+    <updated>2019-06-22T14:21:05.263Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://images2017.cnblogs.com/blog/1210854/201710/1210854-20171024134004613-1234080464.png" alt></p><h1 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h1><h2 id="此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建"><a href="#此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建" class="headerlink" title="此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建"></a>此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="https://jasonssun.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="IDEA的正确使用方法" scheme="https://jasonssun.github.io/tags/IDEA%E7%9A%84%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>ScreenToGif-屏幕录制制作成gif的工具</title>
@@ -99,9 +124,9 @@
       <category term="工具" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="工具" scheme="https://jasonssun.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="Navicate" scheme="https://jasonssun.github.io/tags/Navicate/"/>
+    
+      <category term="工具" scheme="https://jasonssun.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   

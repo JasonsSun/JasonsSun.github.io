@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[build时出现Artifact contains illegal characters的解决]]></title>
+    <url>%2F2019%2F06%2F22%2FIntelliJ%20IDEA%20build%E6%97%B6%E5%87%BA%E7%8E%B0Artifact%20contains%20illegal%20characters%E7%9A%84%E8%A7%A3%E5%86%B3%2F</url>
+    <content type="text"><![CDATA[修改方法此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>IDEA的正确使用方法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ScreenToGif-屏幕录制制作成gif的工具]]></title>
     <url>%2F2019%2F06%2F17%2FScreenToGif-%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E5%88%B6%E4%BD%9C%E6%88%90gif%E7%9A%84%E5%B7%A5%E5%85%B7%2F</url>
     <content type="text"><![CDATA[一款小巧实用的动图Gif生成工具。当截图已达不到你想要的效果时，何不试试它？一款集录像机、摄像头、画板、编辑器于一身的工具。 下载与安装1.登录ScreenToGif官网，或者使用GitHub下载最新发布版ScreenToGif 2.事实上，它不仅可以录制屏幕，同时也包含了摄像头录制，白板书写录制等功能，并且在录制后，可以对录制内容进行增删、修改、压缩等处理。分别通过点击录像和停止来进行录制，通过编辑器对页面进行处理。 生成的效果图： 在编辑中有很多对帧的操作如:增加删除、循环、反转，特别是移除重复帧功能，能很好的减小gif占用内存大小； 而在图片选项中则包含了水印、微动、模糊、字幕、自由文本、自由绘制等功能； ScreenToGif还支持简单的过渡动画；* 统计功能则提供了总帧数、总时长、帧大小、延时、帧分辨率等数据的统计； 在编辑结束后，我们可以根据需求选择适合的类型及编码进行保存； 到目前为止，ScreenToGif已适配20多种语言，并提供上传服务。 Over Ending（结束语）ScreenToGif配置告一段落，其余的相关配置 请自行查看官网，去探索吧，少年!注:如果还有不了解的，可以在右下方与博主在线沟通]]></content>
@@ -36,8 +47,8 @@
         <category>工具</category>
       </categories>
       <tags>
-        <tag>工具</tag>
         <tag>Navicate</tag>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>

@@ -137,7 +137,7 @@
 <meta name="keywords" content="JAVA">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jason&#39;s Blog">
-<meta property="og:url" content="https://jasonssun.github.io/tags/Valine/index.html">
+<meta property="og:url" content="https://jasonssun.github.io/categories/学习笔记/index.html">
 <meta property="og:site_name" content="Jason&#39;s Blog">
 <meta property="og:description" content="没有爱也就没有了烦恼，只是记忆忘不掉！">
 <meta property="og:locale" content="zh-CN">
@@ -153,7 +153,7 @@
 
   
   
-  <link rel="canonical" href="https://jasonssun.github.io/tags/Valine/">
+  <link rel="canonical" href="https://jasonssun.github.io/categories/学习笔记/">
 
 
 
@@ -163,7 +163,7 @@
   };
 </script>
 
-  <title>标签: Valine | Jason's Blog</title>
+  <title>分类: 学习笔记 | Jason's Blog</title>
   
 
 
@@ -308,7 +308,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -325,7 +325,7 @@
         
         
           
-          <li class="menu-item menu-item-categories">
+          <li class="menu-item menu-item-categories menu-item-active">
 
     
     
@@ -469,11 +469,11 @@
   
   
   
-  <div class="post-block tag">
+  <div class="post-block category">
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>Valine<small>标签</small>
+        <h1>学习笔记<small>分类</small>
         </h1>
       </div>
 
@@ -485,17 +485,17 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/06/15/Hexo搭建博客NexT主题之LeanCloud-Valine评论系统的配置/" itemprop="url">
+          <a class="post-title-link" href="/2019/06/22/IntelliJ IDEA build时出现Artifact contains illegal characters的解决/" itemprop="url">
             
-              <span itemprop="name">Hexo搭建博客NexT主题之LeanCloud+Valine评论系统的配置</span>
+              <span itemprop="name">build时出现Artifact contains illegal characters的解决</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-15T23:51:07+08:00" content="2019-06-15">
-          06-15
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-22T22:20:14+08:00" content="2019-06-22">
+          06-22
         </time>
       </div>
 
@@ -1473,8 +1473,8 @@ show_date_time();
       //https://hexo.io/docs/variables.html
       var isPost = ''.length > 0
       var isArchive = '' === 'true'
-      var isCategory = ''.length > 0
-      var isTag = 'Valine'.length > 0
+      var isCategory = '学习笔记'.length > 0
+      var isTag = ''.length > 0
 
       if (isPost) { //is article page
         var title = ''
@@ -1485,7 +1485,7 @@ show_date_time();
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Hexo搭建博客NexT主题之LeanCloud+Valine评论系统的配置");' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("build时出现Artifact contains illegal characters的解决");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
