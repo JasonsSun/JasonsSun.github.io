@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[build时出现Artifact contains illegal characters的解决]]></title>
+    <title><![CDATA[IntelliJ IDEA build时出现Artifact contains illegal characters的解决]]></title>
     <url>%2F2019%2F06%2F22%2FIntelliJ%20IDEA%20build%E6%97%B6%E5%87%BA%E7%8E%B0Artifact%20contains%20illegal%20characters%E7%9A%84%E8%A7%A3%E5%86%B3%2F</url>
     <content type="text"><![CDATA[修改方法此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建]]></content>
       <categories>
