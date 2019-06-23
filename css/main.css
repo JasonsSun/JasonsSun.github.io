@@ -1289,8 +1289,8 @@ pre .javascript .function {
   animation: octocat-wave 560ms ease-in-out;
 }
 .github-corner > svg {
-  fill: #222;
-  color: #0684bd;
+  fill: #49b1f5;
+  color: #fff;
   position: absolute;
   top: 0;
   border: 0;
@@ -2012,7 +2012,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #8b6278;
 }
 .feed-link,
 .chat {
