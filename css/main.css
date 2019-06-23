@@ -154,7 +154,7 @@ template {
 body {
   position: relative;
   font-family: get_font_family('global'), "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   color: $text-color;
   background: #eee;
@@ -166,7 +166,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -584,7 +584,7 @@ pre,
 }
 pre,
 code {
-  font-family: get_font_family('codes'), consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: get_font_family('codes'), consolas, Menlo, get_font_family('global'), "PingFang SC", "Microsoft YaHei", sans-serif, monospace;
 }
 code {
   overflow-wrap: break-word;
@@ -1355,7 +1355,7 @@ pre .javascript .function {
 .post-body {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  font-family: get_font_family('posts'), get_font_family('global'), "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: get_font_family('global'), "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .post-body span.exturl .fa {
   font-size: 14px;
@@ -1371,7 +1371,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1620,7 +1620,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: get_font_family('posts'), get_font_family('global'), "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: get_font_family('global'), "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -2012,7 +2012,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8b6278;
+  background: #c269db;
 }
 .feed-link,
 .chat {
@@ -2602,7 +2602,7 @@ ul.breadcrumb {
   margin: 1em 0;
   padding: 0 2em;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -3463,6 +3463,9 @@ body {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+.post-body {
+  color: #000;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
