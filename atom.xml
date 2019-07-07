@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
-  <updated>2019-06-23T02:41:02.156Z</updated>
+  <updated>2019-07-07T16:36:53.348Z</updated>
   <id>https://jasonssun.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows10 安装MySQL8.0 Failed 解决办法</title>
+    <link href="https://jasonssun.github.io/2019/07/08/Windows10-%E5%AE%89%E8%A3%85MySQL8-0-Failed-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://jasonssun.github.io/2019/07/08/Windows10-安装MySQL8-0-Failed-解决办法/</id>
+    <published>2019-07-07T16:04:04.000Z</published>
+    <updated>2019-07-07T16:36:53.348Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="MySQL下载路径-图示如下："><a href="#MySQL下载路径-图示如下：" class="headerlink" title="MySQL下载路径 图示如下："></a>MySQL下载路径 图示如下：</h1><h2 id="1-MySQL下载路径"><a href="#1-MySQL下载路径" class="headerlink" title="1.MySQL下载路径"></a>1.<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">MySQL下载路径</a></h2><p><img src="/2019/07/08/Windows10-安装MySQL8-0-Failed-解决办法/1.png" alt></p><p><img src="/2019/07/08/Windows10-安装MySQL8-0-Failed-解决办法/2.png" alt></p><h2 id="2-出现status-failed的解决办法"><a href="#2-出现status-failed的解决办法" class="headerlink" title="2. 出现status failed的解决办法"></a>2. 出现status failed的解决办法</h2><p><img src="/2019/07/08/Windows10-安装MySQL8-0-Failed-解决办法/3.png" alt></p><p>升级一个插件，即32位 visual C++ 2013 and  visual C++ redistributable package，就是缺少这个才会出现failed，其实在安装的过程中跳出过这个的安装，但它是根据电脑直接匹配位数的也就是我们大多数的64位，所以需要再根据链接下载一个32位的,<a href="https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package" target="_blank" rel="noopener">x86下载地址Visual C++ 2013 and Visual C++ Redistributable Package</a></p><p> <strong>下载如图:</strong></p><p><img src="/2019/07/08/Windows10-安装MySQL8-0-Failed-解决办法/4.png" alt></p><p><img src="/2019/07/08/Windows10-安装MySQL8-0-Failed-解决办法/5.png" alt></p><h2 id="附加详细安装步骤"><a href="#附加详细安装步骤" class="headerlink" title="附加详细安装步骤"></a><strong>附加详细安装步骤</strong></h2><ol><li><a href="https://www.cnblogs.com/cxc2012/p/8387839.html" target="_blank" rel="noopener">MySQL Community Server 5.7安装详细步骤</a></li><li><a href="https://blog.csdn.net/u013758456/article/details/86519574" target="_blank" rel="noopener">2019年最新版本：mysql-installer-community-8.0.13.0的安装详细图解</a></li></ol><h2 id="Over-Ending（结束语）"><a href="#Over-Ending（结束语）" class="headerlink" title="Over Ending（结束语）"></a>Over Ending（结束语）</h2><p>####MySQL安装告一段落，其余的相关配置 请自行查看官网，去探索吧，少年!</p><h3 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h3><p><strong>如果还有不了解的，可以在右下方与博主在线沟通</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
+    
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>Shiro登陆异常 did not match the expected credentials.</title>
@@ -386,13 +413,13 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
+    <title>Hexo 最常用的几个命令</title>
     <link href="https://jasonssun.github.io/2019/06/09/hello-world/"/>
     <id>https://jasonssun.github.io/2019/06/09/hello-world/</id>
     <published>2019-06-09T08:08:56.409Z</published>
-    <updated>2019-06-09T08:08:56.410Z</updated>
+    <updated>2019-07-07T16:41:28.815Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a><strong>hexo s</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p><ul><li>hexo s 是 hexo server 的缩写，命令效果一致；</li><li>预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；</li><li>对 Hexo 根目录 _config.yml 的修改，需要重启本地服务器后才能预览效果。</li></ul><h2 id="hexo-new"><a href="#hexo-new" class="headerlink" title="hexo new"></a><strong>hexo new</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;学习笔记  六&quot;</span><br><span class="line">hexo n &quot;学习笔记  六&quot;</span><br></pre></td></tr></table></figure><p>新建一篇标题为 学习笔记 六 的文章，因为标题里有空格，所以加上了引号。</p><ul><li>文章标题可以在对应 md 文件里改，新建时标题可以写的简单些。</li></ul><h2 id="hexo-d"><a href="#hexo-d" class="headerlink" title="hexo d"></a><strong>hexo d</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>自动生成网站静态文件，并部署到设定的仓库。</p><ul><li>hexo d 是 hexo deploy 的缩写，命令效果一致。</li></ul><h2 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a><strong>hexo clean</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure><p>清除缓存文件 db.json 和已生成的静态文件 public 。</p><ul><li>网站显示异常时可以执行这条命令试试。</li></ul><h2 id="hexo-g"><a href="#hexo-g" class="headerlink" title="hexo g"></a><strong>hexo g</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><p>生成网站静态文件到默认设置的 public 文件夹。</p><ul><li>便于查看网站生成的静态文件或者手动部署网站；</li><li>如果使用自动部署，不需要先执行该命令；</li><li>hexo g 是 hexo generate 的缩写，命令效果一致。</li></ul>]]></content>
     
     <summary type="html">
     

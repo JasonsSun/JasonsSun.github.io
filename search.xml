@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Windows10 安装MySQL8.0 Failed 解决办法]]></title>
+    <url>%2F2019%2F07%2F08%2FWindows10-%E5%AE%89%E8%A3%85MySQL8-0-Failed-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[MySQL下载路径 图示如下：1.MySQL下载路径 2. 出现status failed的解决办法 升级一个插件，即32位 visual C++ 2013 and visual C++ redistributable package，就是缺少这个才会出现failed，其实在安装的过程中跳出过这个的安装，但它是根据电脑直接匹配位数的也就是我们大多数的64位，所以需要再根据链接下载一个32位的,x86下载地址Visual C++ 2013 and Visual C++ Redistributable Package 下载如图: 附加详细安装步骤 MySQL Community Server 5.7安装详细步骤 2019年最新版本：mysql-installer-community-8.0.13.0的安装详细图解 Over Ending（结束语）####MySQL安装告一段落，其余的相关配置 请自行查看官网，去探索吧，少年! 注:如果还有不了解的，可以在右下方与博主在线沟通]]></content>
+      <categories>
+        <category>数据库</category>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Shiro登陆异常 did not match the expected credentials.]]></title>
     <url>%2F2019%2F06%2F23%2F%E4%BD%BF%E7%94%A8SpringBoot-Shiro%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E8%A7%81%E7%9A%84%E5%AF%86%E7%A0%81%E4%B8%8D%E5%8C%B9%E9%85%8D%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[错误如下： 1234567891011121314151617 threw exception [Request processing failed; nested exception is org.apache.shiro.authc.IncorrectCredentialsException: Submitted credentials for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=true] did not match the expected credentials.] with root causeorg.apache.shiro.authc.IncorrectCredentialsException: Submitted credentials for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=true] did not match the expected credentials.at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:578)at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270)at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256)at com.sk.main.controller.LoginController.login(LoginController.java:36)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:606)at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) 解决方案： 这是shiro返回的密码校验结果不一样，要么你把shiro校验的令牌规则重写，就是按什么方式去校验。 要么你自己把密码加密好传给shiro。 白话文讲：当你登陆的时候，你会创建一个UsernamePasswordToken对象，或者UsernamePasswordToken的子类对象，并且赋予账号、密码、rememberMe，这里的密码你需要和数据库一直，比如你做了md5加密，那么你先做md5加密然后再创建UsernamePasswordToken对象.然后你在校验完毕后： 1return new SimpleAuthenticationInfo(token,memberSecurity.getLoginPswd(), getName()); 这里的第二个参数为密码，shiro会把第二个参数和你开始传进来的参数按规则对比，如果错误（或者是同一个引用对象）就返回上面的错误。]]></content>
@@ -166,8 +178,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
+    <title><![CDATA[Hexo 最常用的几个命令]]></title>
     <url>%2F2019%2F06%2F09%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment hexo s1hexo s 启动本地服务器，用于预览主题。默认地址： http://localhost:4000/ hexo s 是 hexo server 的缩写，命令效果一致； 预览的同时可以修改文章内容或主题代码，保存后刷新页面即可； 对 Hexo 根目录 _config.yml 的修改，需要重启本地服务器后才能预览效果。 hexo new12hexo new &quot;学习笔记 六&quot;hexo n &quot;学习笔记 六&quot; 新建一篇标题为 学习笔记 六 的文章，因为标题里有空格，所以加上了引号。 文章标题可以在对应 md 文件里改，新建时标题可以写的简单些。 hexo d1hexo d 自动生成网站静态文件，并部署到设定的仓库。 hexo d 是 hexo deploy 的缩写，命令效果一致。 hexo clean1hexo clean 清除缓存文件 db.json 和已生成的静态文件 public 。 网站显示异常时可以执行这条命令试试。 hexo g1hexo g 生成网站静态文件到默认设置的 public 文件夹。 便于查看网站生成的静态文件或者手动部署网站； 如果使用自动部署，不需要先执行该命令； hexo g 是 hexo generate 的缩写，命令效果一致。]]></content>
   </entry>
 </search>
