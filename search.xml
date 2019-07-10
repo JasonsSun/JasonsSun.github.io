@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[数据库之MySQL caching_sha2_password 和 mysql_native_password]]></title>
+    <url>%2F2019%2F07%2F11%2F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BMySQL-caching-sha2-password-%E5%92%8C-mysql-native-password%2F</url>
+    <content type="text"><![CDATA[1.问题重现Client does not support authentication protocol requested by server; consider upgrading MySQL client 2.说明123为了提供更安全的密码加密，MySQL8.0的首选默认认证插件是caching_sha2_password，而不是mysql_native_password 3.解决办法解决方式或者注意事项： 1.对于MySQL 8.0的升级，身份验证插件现有帐户保持不变，包括’root’@’localhost’管理帐户的插件。2.对于新的MySQL 8.0安装，在初始化数据目录时，将 ‘root’@’localhost’创建帐户，并且该帐户caching_sha2_password默认使用。3.对于新的MySQL 8.0安装，还想使用之前的密码认证方式请使用1ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; 4.安装的时候两个密码可选加密方式 4.查询自己的数据库和加密方式]]></content>
+      <categories>
+        <category>数据库</category>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据库之'hibernate.dialect' not set错误]]></title>
+    <url>%2F2019%2F07%2F11%2F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8B-hibernate-dialect-not-set%E9%94%99%E8%AF%AF%2F</url>
+    <content type="text"><![CDATA[数据库问题重现Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when ‘hibernate.dialect’ not set 解决方式Hibernate SQL方言没有设置导致的，在properties文件中加入： 1spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect Hibernate SQL方言整理如下: | 数据库 | 方言 || ——- | :—— | ——: || DB2| org.hibernate.dialect.DB2Dialect || DB2 AS/400 | org.hibernate.dialect.DB2400Dialect || DB2 OS390 | org.hibernate.dialect.DB2390Dialect| PostgreSQL| org.hibernate.dialect.PostgreSQLDialect| MySQL | org.hibernate.dialect.MySQLDialect| MySQL with InnoDB| org.hibernate.dialect.MySQLInnoDBDialect| MySQL with MyISAM | org.hibernate.dialect.MySQLMyISAMDialect| Oracle (any version) | org.hibernate.dialect.OracleDialect| Oracle 9i/10g | org.hibernate.dialect.Oracle9Dialect| Sybase | org.hibernate.dialect.SybaseDialect| Sybase Anywhere | org.hibernate.dialect.SybaseAnywhereDialect| Microsoft SQL Server | org.hibernate.dialect.SQLServerDialect| SAP DB| org.hibernate.dialect.SAPDBDialect| Informix| org.hibernate.dialect.InformixDialect| HypersonicSQL| org.hibernate.dialect.HSQLDialect| Ingres | org.hibernate.dialect.IngresDialect| Progress| org.hibernate.dialect.ProgressDialect| Mckoi SQL| org.hibernate.dialect.MckoiDialect| Interbase| org.hibernate.dialect.InterbaseDialect| Pointbase| org.hibernate.dialect.PointbaseDialect| FrontBase | org.hibernate.dialect.FrontbaseDialect| Firebird | org.hibernate.dialect.FirebirdDialect]]></content>
+      <categories>
+        <category>数据库</category>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据库之Public Key Retrieval is not allowed错误]]></title>
+    <url>%2F2019%2F07%2F11%2F%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BPublic-Key-Retrieval-is-not-allowed%E9%94%99%E8%AF%AF%2F</url>
+    <content type="text"><![CDATA[数据库问题重现com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed 解决方式1.mysql5及之前的版本使用的是旧版驱动”com.mysql.jdbc.Driver”，mysql6以及之后的版本需要更新到新版驱动，对应的Driver是”com.mysql.cj.jdbc.Driver”，但是这个驱动错误的信息是”Loading class com.mysql.jdbc.Driver&#39;. This is deprecated. The new driver class iscom.mysql.cj.jdbc.Driver’. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.”，排除这个原因。也就是升级Mysql 2.连接数据库的url中，加上_allowPublicKeyRetrieval=true_参数，经过验证解决该问题。3.修改default_authentication_plugin设置，在my.ini中增加[mysqld]default_authentication_plugin=mysql_native_password，然后mysql命令行执行ALTER USER ‘username’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘password’;最后在url中添加时区参数serverTimezone=Asia/Shanghai。]]></content>
+      <categories>
+        <category>数据库</category>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Windows10 安装MySQL8.0 Failed 解决办法]]></title>
     <url>%2F2019%2F07%2F08%2FWindows10-%E5%AE%89%E8%A3%85MySQL8-0-Failed-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
     <content type="text"><![CDATA[MySQL下载路径 图示如下：1.MySQL下载路径 2. 出现status failed的解决办法 升级一个插件，即32位 visual C++ 2013 and visual C++ redistributable package，就是缺少这个才会出现failed，其实在安装的过程中跳出过这个的安装，但它是根据电脑直接匹配位数的也就是我们大多数的64位，所以需要再根据链接下载一个32位的,x86下载地址Visual C++ 2013 and Visual C++ Redistributable Package 下载如图: 附加详细安装步骤 MySQL Community Server 5.7安装详细步骤 2019年最新版本：mysql-installer-community-8.0.13.0的安装详细图解 Over Ending（结束语）####MySQL安装告一段落，其余的相关配置 请自行查看官网，去探索吧，少年! 注:如果还有不了解的，可以在右下方与博主在线沟通]]></content>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
-  <updated>2019-07-07T16:36:53.348Z</updated>
+  <updated>2019-07-10T16:39:54.001Z</updated>
   <id>https://jasonssun.github.io/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库之MySQL caching_sha2_password 和 mysql_native_password</title>
+    <link href="https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BMySQL-caching-sha2-password-%E5%92%8C-mysql-native-password/"/>
+    <id>https://jasonssun.github.io/2019/07/11/数据库之MySQL-caching-sha2-password-和-mysql-native-password/</id>
+    <published>2019-07-10T16:31:29.000Z</published>
+    <updated>2019-07-10T16:39:54.001Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题重现"><a href="#1-问题重现" class="headerlink" title="1.问题重现"></a>1.问题重现</h1><p>Client does not support authentication protocol requested by server; consider upgrading MySQL client</p><h1 id="2-说明"><a href="#2-说明" class="headerlink" title="2.说明"></a>2.说明</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">为了提供更安全的密码加密，</span><br><span class="line">MySQL8.0的首选默认认证插件是caching_sha2_password，</span><br><span class="line">而不是mysql_native_password</span><br></pre></td></tr></table></figure><h1 id="3-解决办法"><a href="#3-解决办法" class="headerlink" title="3.解决办法"></a>3.解决办法</h1><p>解决方式或者注意事项：</p><h2 id="1-对于MySQL-8-0的升级，身份验证插件现有帐户保持不变，包括’root’-’localhost’管理帐户的插件。"><a href="#1-对于MySQL-8-0的升级，身份验证插件现有帐户保持不变，包括’root’-’localhost’管理帐户的插件。" class="headerlink" title="1.对于MySQL 8.0的升级，身份验证插件现有帐户保持不变，包括’root’@’localhost’管理帐户的插件。"></a>1.对于MySQL 8.0的升级，身份验证插件现有帐户保持不变，包括’root’@’localhost’管理帐户的插件。</h2><h2 id="2-对于新的MySQL-8-0安装，在初始化数据目录时，将-‘root’-’localhost’创建帐户，并且该帐户caching-sha2-password默认使用。"><a href="#2-对于新的MySQL-8-0安装，在初始化数据目录时，将-‘root’-’localhost’创建帐户，并且该帐户caching-sha2-password默认使用。" class="headerlink" title="2.对于新的MySQL 8.0安装，在初始化数据目录时，将 ‘root’@’localhost’创建帐户，并且该帐户caching_sha2_password默认使用。"></a>2.对于新的MySQL 8.0安装，在初始化数据目录时，将 ‘root’@’localhost’创建帐户，并且该帐户caching_sha2_password默认使用。</h2><h2 id="3-对于新的MySQL-8-0安装，还想使用之前的密码认证方式请使用"><a href="#3-对于新的MySQL-8-0安装，还想使用之前的密码认证方式请使用" class="headerlink" title="3.对于新的MySQL 8.0安装，还想使用之前的密码认证方式请使用"></a>3.对于新的MySQL 8.0安装，还想使用之前的密码认证方式请使用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED WITH mysql_native_password BY <span class="string">'password'</span>;</span><br></pre></td></tr></table></figure><h2 id="4-安装的时候两个密码可选加密方式"><a href="#4-安装的时候两个密码可选加密方式" class="headerlink" title="4.安装的时候两个密码可选加密方式"></a>4.安装的时候两个密码可选加密方式</h2><p><img src="/2019/07/11/数据库之MySQL-caching-sha2-password-和-mysql-native-password/1.png" alt></p><h1 id="4-查询自己的数据库和加密方式"><a href="#4-查询自己的数据库和加密方式" class="headerlink" title="4.查询自己的数据库和加密方式"></a>4.查询自己的数据库和加密方式</h1><p><img src="/2019/07/11/数据库之MySQL-caching-sha2-password-和-mysql-native-password/2.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
+    
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库之&#39;hibernate.dialect&#39; not set错误</title>
+    <link href="https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8B-hibernate-dialect-not-set%E9%94%99%E8%AF%AF/"/>
+    <id>https://jasonssun.github.io/2019/07/11/数据库之-hibernate-dialect-not-set错误/</id>
+    <published>2019-07-10T16:18:32.000Z</published>
+    <updated>2019-07-10T16:28:55.161Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="数据库问题重现"><a href="#数据库问题重现" class="headerlink" title="数据库问题重现"></a>数据库问题重现</h1><p>Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when ‘hibernate.dialect’ not set</p><h1 id="解决方式"><a href="#解决方式" class="headerlink" title="解决方式"></a>解决方式</h1><p>Hibernate SQL方言没有设置导致的，在properties文件中加入：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect</span><br></pre></td></tr></table></figure><p>Hibernate SQL方言整理如下:</p><p>| 数据库 | 方言 |<br>| ——- | :—— | ——: |<br>| DB2| org.hibernate.dialect.DB2Dialect |<br>| DB2 AS/400 | org.hibernate.dialect.DB2400Dialect |<br>| DB2 OS390    | org.hibernate.dialect.DB2390Dialect<br>| PostgreSQL|     org.hibernate.dialect.PostgreSQLDialect<br>| MySQL    | org.hibernate.dialect.MySQLDialect<br>| MySQL with InnoDB|     org.hibernate.dialect.MySQLInnoDBDialect<br>| MySQL with MyISAM    | org.hibernate.dialect.MySQLMyISAMDialect<br>| Oracle (any version)    | org.hibernate.dialect.OracleDialect<br>| Oracle 9i/10g    | org.hibernate.dialect.Oracle9Dialect<br>| Sybase    | org.hibernate.dialect.SybaseDialect<br>| Sybase Anywhere    | org.hibernate.dialect.SybaseAnywhereDialect<br>| Microsoft SQL Server    | org.hibernate.dialect.SQLServerDialect<br>| SAP DB|     org.hibernate.dialect.SAPDBDialect<br>| Informix|     org.hibernate.dialect.InformixDialect<br>| HypersonicSQL|     org.hibernate.dialect.HSQLDialect<br>| Ingres    | org.hibernate.dialect.IngresDialect<br>| Progress|     org.hibernate.dialect.ProgressDialect<br>| Mckoi SQL|     org.hibernate.dialect.MckoiDialect<br>| Interbase|     org.hibernate.dialect.InterbaseDialect<br>| Pointbase|     org.hibernate.dialect.PointbaseDialect<br>| FrontBase    | org.hibernate.dialect.FrontbaseDialect<br>| Firebird    | org.hibernate.dialect.FirebirdDialect</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
+    
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库之Public Key Retrieval is not allowed错误</title>
+    <link href="https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BPublic-Key-Retrieval-is-not-allowed%E9%94%99%E8%AF%AF/"/>
+    <id>https://jasonssun.github.io/2019/07/11/数据库之Public-Key-Retrieval-is-not-allowed错误/</id>
+    <published>2019-07-10T16:02:48.000Z</published>
+    <updated>2019-07-10T16:16:16.239Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="数据库问题重现"><a href="#数据库问题重现" class="headerlink" title="数据库问题重现"></a>数据库问题重现</h1><p>com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed</p><h1 id="解决方式"><a href="#解决方式" class="headerlink" title="解决方式"></a>解决方式</h1><h2 id="1-mysql5及之前的版本使用的是旧版驱动”com-mysql-jdbc-Driver”，mysql6以及之后的版本需要更新到新版驱动，对应的Driver是”com-mysql-cj-jdbc-Driver”，但是这个驱动错误的信息是”Loading-class-com-mysql-jdbc-Driver-39-This-is-deprecated-The-new-driver-class-iscom-mysql-cj-jdbc-Driver’-The-driver-is-automatically-registered-via-the-SPI-and-manual-loading-of-the-driver-class-is-generally-unnecessary-”，排除这个原因。"><a href="#1-mysql5及之前的版本使用的是旧版驱动”com-mysql-jdbc-Driver”，mysql6以及之后的版本需要更新到新版驱动，对应的Driver是”com-mysql-cj-jdbc-Driver”，但是这个驱动错误的信息是”Loading-class-com-mysql-jdbc-Driver-39-This-is-deprecated-The-new-driver-class-iscom-mysql-cj-jdbc-Driver’-The-driver-is-automatically-registered-via-the-SPI-and-manual-loading-of-the-driver-class-is-generally-unnecessary-”，排除这个原因。" class="headerlink" title="1.mysql5及之前的版本使用的是旧版驱动”com.mysql.jdbc.Driver”，mysql6以及之后的版本需要更新到新版驱动，对应的Driver是”com.mysql.cj.jdbc.Driver”，但是这个驱动错误的信息是”Loading class com.mysql.jdbc.Driver&#39;. This is deprecated. The new driver class iscom.mysql.cj.jdbc.Driver’. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.”，排除这个原因。"></a>1.mysql5及之前的版本使用的是旧版驱动”com.mysql.jdbc.Driver”，mysql6以及之后的版本需要更新到新版驱动，对应的Driver是”com.mysql.cj.jdbc.Driver”，但是这个驱动错误的信息是”Loading class <code>com.mysql.jdbc.Driver&#39;. This is deprecated. The new driver class is</code>com.mysql.cj.jdbc.Driver’. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.”，排除这个原因。</h2><p>也就是升级Mysql</p><h2 id="2-连接数据库的url中，加上-allowPublicKeyRetrieval-true-参数，经过验证解决该问题。"><a href="#2-连接数据库的url中，加上-allowPublicKeyRetrieval-true-参数，经过验证解决该问题。" class="headerlink" title="2.连接数据库的url中，加上_allowPublicKeyRetrieval=true_参数，经过验证解决该问题。"></a>2.连接数据库的url中，加上<code>_allowPublicKeyRetrieval=true_</code>参数，经过验证解决该问题。</h2><h2 id="3-修改default-authentication-plugin设置，在my-ini中增加-mysqld-default-authentication-plugin-mysql-native-password，然后mysql命令行执行ALTER-USER-‘username’-’localhost’-IDENTIFIED-WITH-mysql-native-password-BY-‘password’-最后在url中添加时区参数serverTimezone-Asia-Shanghai。"><a href="#3-修改default-authentication-plugin设置，在my-ini中增加-mysqld-default-authentication-plugin-mysql-native-password，然后mysql命令行执行ALTER-USER-‘username’-’localhost’-IDENTIFIED-WITH-mysql-native-password-BY-‘password’-最后在url中添加时区参数serverTimezone-Asia-Shanghai。" class="headerlink" title="3.修改default_authentication_plugin设置，在my.ini中增加[mysqld]default_authentication_plugin=mysql_native_password，然后mysql命令行执行ALTER USER ‘username’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘password’;最后在url中添加时区参数serverTimezone=Asia/Shanghai。"></a>3.修改default_authentication_plugin设置，在my.ini中增加[mysqld]default_authentication_plugin=mysql_native_password，然后mysql命令行执行ALTER USER ‘username’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘password’;最后在url中添加时区参数serverTimezone=Asia/Shanghai。</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
+    
+    
+      <category term="MySQL" scheme="https://jasonssun.github.io/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows10 安装MySQL8.0 Failed 解决办法</title>
@@ -129,7 +210,7 @@
     <link href="https://jasonssun.github.io/2019/06/22/IntelliJ%20IDEA%20build%E6%97%B6%E5%87%BA%E7%8E%B0Artifact%20contains%20illegal%20characters%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     <id>https://jasonssun.github.io/2019/06/22/IntelliJ IDEA build时出现Artifact contains illegal characters的解决/</id>
     <published>2019-06-22T14:20:14.000Z</published>
-    <updated>2019-06-22T14:35:09.614Z</updated>
+    <updated>2019-07-09T14:07:33.925Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://jasonssun.github.io/images/illeglecharacters.png" alt></p><h1 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h1><h2 id="此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建"><a href="#此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建" class="headerlink" title="此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建"></a>此处无法创建是因为Artifact的命名为大小写混合，将大写改为小写即可正常创建</h2>]]></content>
     
