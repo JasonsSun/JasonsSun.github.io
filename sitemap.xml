@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jasonssun.github.io/2019/07/12/Java%E7%AC%94%E8%AE%B0%E4%B9%8Bjava8%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%BB%A5%E5%8F%8A%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%B7%AE/</loc>
+    
+    <lastmod>2019-07-12T15:00:14.375Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BMySQL-caching-sha2-password-%E5%92%8C-mysql-native-password/</loc>
+    
+    <lastmod>2019-07-12T14:20:26.898Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jasonssun.github.io/2019/07/12/Java%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%8F%96%E6%95%B4%E5%87%BD%E6%95%B0%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2019-07-12T14:17:02.806Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8B-hibernate-dialect-not-set%E9%94%99%E8%AF%AF/</loc>
     
     <lastmod>2019-07-11T11:32:47.930Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BMySQL-caching-sha2-password-%E5%92%8C-mysql-native-password/</loc>
-    
-    <lastmod>2019-07-10T16:39:54.001Z</lastmod>
     
   </url>
   
