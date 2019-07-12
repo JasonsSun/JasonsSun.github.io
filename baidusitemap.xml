@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BMySQL-caching-sha2-password-%E5%92%8C-mysql-native-password/</loc>
-    <lastmod>2019-07-10</lastmod>
+    <loc>https://jasonssun.github.io/2019/07/12/Java%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%8F%96%E6%95%B4%E5%87%BD%E6%95%B0%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2019-07-12</lastmod>
   </url>  <url>
     <loc>https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8B-hibernate-dialect-not-set%E9%94%99%E8%AF%AF/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
+    <loc>https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BMySQL-caching-sha2-password-%E5%92%8C-mysql-native-password/</loc>
     <lastmod>2019-07-10</lastmod>
   </url>  <url>
     <loc>https://jasonssun.github.io/2019/07/11/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B9%8BPublic-Key-Retrieval-is-not-allowed%E9%94%99%E8%AF%AF/</loc>
