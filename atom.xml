@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Jason&#39;s Blog</title>
   
-  <subtitle>我喝过最烈的酒，也放过不该放的手。从前不会回头，往后不会将就。</subtitle>
+  <subtitle>不再回头，不会将就，选对一个人是幸福，反之则是痛苦！珍惜余生，慎重选择！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
@@ -371,9 +371,9 @@
       <category term="工具" scheme="https://jasonssun.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="工具" scheme="https://jasonssun.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="Navicate" scheme="https://jasonssun.github.io/tags/Navicate/"/>
+    
+      <category term="工具" scheme="https://jasonssun.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
