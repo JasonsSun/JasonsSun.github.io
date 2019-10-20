@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jasonssun.github.io/"/>
-  <updated>2019-08-18T15:16:36.829Z</updated>
+  <updated>2019-10-20T13:55:40.030Z</updated>
   <id>https://jasonssun.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springboot RestFul接口跨域解决方法</title>
+    <link href="https://jasonssun.github.io/2019/10/20/springboot-RestFul%E6%8E%A5%E5%8F%A3%E8%B7%A8%E5%9F%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://jasonssun.github.io/2019/10/20/springboot-RestFul接口跨域解决方法/</id>
+    <published>2019-10-20T13:03:00.000Z</published>
+    <updated>2019-10-20T13:55:40.030Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>将spring boot以restful接口的方式对外提供服务的时候，如果此时架构是前后端分离的，那么就会涉及到跨域的问题。</p><h2 id="1-局部添加注解方式"><a href="#1-局部添加注解方式" class="headerlink" title="1.局部添加注解方式"></a>1.局部添加注解方式</h2><h4 id="1-1在controller层添加"><a href="#1-1在controller层添加" class="headerlink" title="1.1在controller层添加"></a>1.1在controller层添加</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@CrossOrigin</span></span><br></pre></td></tr></table></figure><h3 id="1-2在controller层的方法上添加注解"><a href="#1-2在controller层的方法上添加注解" class="headerlink" title="1.2在controller层的方法上添加注解"></a>1.2在controller层的方法上添加注解</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@CrossOrigin</span>(allowCredentials=<span class="string">"true"</span>, </span><br><span class="line">allowedHeaders=<span class="string">"*"</span>, </span><br><span class="line">methods=&#123;</span><br><span class="line">RequestMethod.GET,</span><br><span class="line">RequestMethod.POST,</span><br><span class="line">RequestMethod.DELETE,</span><br><span class="line">RequestMethod.OPTIONS,</span><br><span class="line">RequestMethod.HEAD,</span><br><span class="line">RequestMethod.PUT,</span><br><span class="line">RequestMethod.PATCH&#125;, origins=<span class="string">"*"</span>)</span><br></pre></td></tr></table></figure><p>例子如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@CrossOrigin</span> <span class="comment">// 注解方式</span></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HandlerScanController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="meta">@CrossOrigin</span>(allowCredentials=<span class="string">"true"</span>, allowedHeaders=<span class="string">"*"</span>, methods=&#123;RequestMethod.GET,</span><br><span class="line">            RequestMethod.POST, RequestMethod.DELETE, RequestMethod.OPTIONS,</span><br><span class="line">            RequestMethod.HEAD, RequestMethod.PUT, RequestMethod.PATCH&#125;, origins=<span class="string">"*"</span>)</span><br><span class="line">    <span class="meta">@PostMapping</span>(<span class="string">"/confirm"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Response <span class="title">handler</span><span class="params">(@RequestBody Request json)</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h2 id="2-全局配置跨域方法"><a href="#2-全局配置跨域方法" class="headerlink" title="2. 全局配置跨域方法"></a>2. 全局配置跨域方法</h2><h3 id="2-1在WebMVC配置层配置"><a href="#2-1在WebMVC配置层配置" class="headerlink" title="2.1在WebMVC配置层配置"></a>2.1在WebMVC配置层配置</h3><p>代码如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyConfiguration</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> WebMvcConfigurer <span class="title">corsConfigurer</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> WebMvcConfigurerAdapter() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addCorsMappings</span><span class="params">(CorsRegistry registry)</span> </span>&#123;</span><br><span class="line">                registry.addMapping(<span class="string">"/**"</span>)</span><br><span class="line">                .allowCredentials(<span class="keyword">true</span>)</span><br><span class="line">                .allowedMethods(<span class="string">"GET"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="3-结合Filter使用解决跨域"><a href="#3-结合Filter使用解决跨域" class="headerlink" title="3.结合Filter使用解决跨域"></a>3.结合Filter使用解决跨域</h2><h3 id="3-1在spring-boot的主类中，增加一个CorsFilter"><a href="#3-1在spring-boot的主类中，增加一个CorsFilter" class="headerlink" title="3.1在spring boot的主类中，增加一个CorsFilter"></a>3.1在spring boot的主类中，增加一个CorsFilter</h3><p>代码如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * attention:简单跨域就是GET，HEAD和POST请求，但是POST请求的"Content-Type"只能是application/x-www-form-urlencoded, multipart/form-data 或 text/plain</span></span><br><span class="line"><span class="comment">     * 反之，就是非简单跨域，此跨域有一个预检机制，说直白点，就是会发两次请求，一次OPTIONS请求，一次真正的请求</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> CorsFilter <span class="title">corsFilter</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> UrlBasedCorsConfigurationSource source = <span class="keyword">new</span> UrlBasedCorsConfigurationSource();</span><br><span class="line">        <span class="keyword">final</span> CorsConfiguration config = <span class="keyword">new</span> CorsConfiguration();</span><br><span class="line">        config.setAllowCredentials(<span class="keyword">true</span>); <span class="comment">// 允许cookies跨域</span></span><br><span class="line">        config.addAllowedOrigin(<span class="string">"*"</span>);<span class="comment">// #允许向该服务器提交请求的URI，*表示全部允许，在SpringMVC中，如果设成*，会自动转成当前请求头中的Origin</span></span><br><span class="line">        config.addAllowedHeader(<span class="string">"*"</span>);<span class="comment">// #允许访问的头信息,*表示全部</span></span><br><span class="line">        config.setMaxAge(<span class="number">18000L</span>);<span class="comment">// 预检请求的缓存时间（秒），即在这个时间段里，对于相同的跨域请求不会再预检了</span></span><br><span class="line">        config.addAllowedMethod(<span class="string">"GET"</span>);<span class="comment">// 允许提交请求的方法,*表示全部允许</span></span><br><span class="line"></span><br><span class="line">        source.registerCorsConfiguration(<span class="string">"/**"</span>, config);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> CorsFilter(source);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h2 id="Over-Ending（结束语）"><a href="#Over-Ending（结束语）" class="headerlink" title="Over Ending（结束语）"></a>Over Ending（结束语）</h2><h3 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h3><pre><code>如果微服务多的话，需要在每个服务的主类上都加上这么段代码，这违反了DRY原则，更好的做法是在zuul的网关层解决跨域问题，一劳永逸。</code></pre><p><strong>如果还有不了解的，可以在右下方与博主在线沟通</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="SpringBoot" scheme="https://jasonssun.github.io/categories/SpringBoot/"/>
+    
+      <category term="接口跨域" scheme="https://jasonssun.github.io/categories/SpringBoot/%E6%8E%A5%E5%8F%A3%E8%B7%A8%E5%9F%9F/"/>
+    
+      <category term="Java" scheme="https://jasonssun.github.io/categories/SpringBoot/%E6%8E%A5%E5%8F%A3%E8%B7%A8%E5%9F%9F/Java/"/>
+    
+    
+      <category term="SpringBoot" scheme="https://jasonssun.github.io/tags/SpringBoot/"/>
+    
+      <category term="接口跨域" scheme="https://jasonssun.github.io/tags/%E6%8E%A5%E5%8F%A3%E8%B7%A8%E5%9F%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>Java笔记之JAVA静态类切换以及获取配置文件属性方法</title>
@@ -552,37 +583,6 @@
       <category term="NexT 7.0+" scheme="https://jasonssun.github.io/tags/NexT-7-0/"/>
     
       <category term="DaoVoice" scheme="https://jasonssun.github.io/tags/DaoVoice/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>来源于生活，却又高于生活</title>
-    <link href="https://jasonssun.github.io/2019/06/13/%E4%BD%93%E4%BC%9A%E4%BA%BA%E5%AE%B6%E5%86%B7%E6%9A%96%EF%BC%8C%E6%84%9F%E6%82%9F%E4%BA%BA%E7%94%9F%E7%99%BE%E6%80%81%EF%BC%81/"/>
-    <id>https://jasonssun.github.io/2019/06/13/体会人家冷暖，感悟人生百态！/</id>
-    <published>2019-06-12T16:48:48.000Z</published>
-    <updated>2019-07-09T14:06:33.918Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="说尺子"><a href="#说尺子" class="headerlink" title="说尺子"></a>说尺子</h1><p>   从100分到98分，挨一顿揍；从55分到61分，得一个吻。这看似荒诞不经的故事，却常常发生在我们身边，许多人看来，前者退步了挨揍是天经地义，后者进步了得吻是理所当然。</p><p>   我们常说，要一把尺子量到底。在现实生活中，应当说尺子是最公平的，但拿在不同人的手里，去度量不同的人，就会出现不同的结果。我们习惯了妈妈在厨房中的忙碌，一日三餐总是准时吃到可口的饭菜，可当有一天，我们回家面对着干锅冷灶的时候，却首先想到的是无饭可吃，沮丧之余，面露愠色，甚至开口责备，完全忽略了她累了病了，撑不住了，连烧口开水的力气也没有了；而我们的爸爸偶尔下一次厨房，煮一碗面，却能让一家人感到万分知足。惯性，使我们的尺子变得富有弹性，却无法丈量出爱的深远。</p><p>   每个单位都良莠不齐，有干的有看的，也有捣乱的，总有一些秃子混在和尚之中滥竽充数。奇怪的是干的永远在干，看的一直在看，而干得越多失误也越多，得到的批评也越多，而那些看客，偶尔偷机取巧做做样子，就会名利双收。甚至那些捣乱的，变得乖巧一些，就会让领导和一席众人皆大欢喜，心满意足。惰性，使我们的尺子带了偏见，就再也无法凝聚众人的力量。<br>      大家还记得北方小城那位舍粥的大嫂吗？每到冬天她就半夜起来，熬上满满的三锅热粥，免费送给寒风中瑟缩的清洁工、穷苦人和乞丐，数年如一日，不曾间断。而当有一天，一位老汉从中吃出了一粒沙子，顿时将一碗热粥泼在大嫂的身上，而领粥的人，也瞬间划分为两大阵营：有人说老汉不该撒野，也有人指责大嫂不该掺沙子。薄情，让我们的尺子扭曲，冷了多少善良的心。</p><p>   开县一辆满载了19名乘客的中巴，突遇险情，一头栽进深达五米的水塘。当地村民金有树跳进冰冷刺骨的水中，砸开车窗将19名乘客全部救出，自己却因长时间冷水的浸泡患上肺病，举债治疗数月，告借无门，不得不离开医院，病死家中。19名幸存者无一人去医院探视，更无人为他送行。金有树临死前写下一封信，第一句话就是：“我救了19人的命，现在谁来救我的命。”冷漠，让我们的尺子訇然寸断，留下无尽的遗憾。</p><p>   每个人心里都有一把尺子。我们用它来衡量别人，更要时常度量自己。这个世界，应当有这样一把尺子，于情充满温暖，于理凸显公平，于法彰显正义，时时刻刻闪耀着人性的光辉。只要坚持从我做起，从一点一滴做起，苛责自我，宽厚待人，星星之火，势必燎原，人间终会洒满阳光，洒满爱。</p><h1 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h1><p>   其实每个人心里又何尝没一把尺子呢？但是社会的残酷、人心的冷漠，不得不逼我们去做出选择。现在大街上很多乞讨的人，他们真的穷吗？就像有的人所说那样，你见过大早上就起来要饭的乞丐吗？我所见过的是没有，有些人就说乞丐不可能早上就起来要饭的，他们如果早上起得来，也就不会沦落为要饭。虽然大家都是有同情心的，可是如果利用大家的同情心谋取不义之财，却是我们所不能接受的。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="生活" scheme="https://jasonssun.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="读后感" scheme="https://jasonssun.github.io/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
-    
-    
-      <category term="生活" scheme="https://jasonssun.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="体会" scheme="https://jasonssun.github.io/tags/%E4%BD%93%E4%BC%9A/"/>
-    
-      <category term="感悟" scheme="https://jasonssun.github.io/tags/%E6%84%9F%E6%82%9F/"/>
     
   </entry>
   
