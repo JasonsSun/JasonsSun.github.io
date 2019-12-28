@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[2019年 年终个人总结]]></title>
+    <url>%2F2019%2F12%2F28%2F2019%E5%B9%B4-%E5%B9%B4%E7%BB%88%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[2019即将过去&lt;——&gt;2020年即将到来技术方面 后端 熟练使用 SpringBoot/Spring Cloud ——&gt; 达成度70% 运用Redis数据库目标缓存任务 ——&gt; 达成度 100% 运用ActiveMQ/RabbitMQ消息队列处理消息 ——&gt; 达成度100% 运用Echarts图形化展示心率、呼吸等数据(动态显示心率波动）—&gt; 达成度100% 运用Drools规则引擎 ——&gt; 达成度80% 生活方面励志篇 《别在吃苦的年纪选择安逸》 《将来的你一定感谢现在拼命的自己》 《决定你上限的不是能力，而是格局》 《你受的苦，总有一天会照亮你未来的路》 心得总结 时光飞逝，伴随着比较紧凑又略显紧张的生活节奏，2019年就这样快接近尾声，虽然我来上海时间还不太长，可是时间的脚步依然没有放慢它前行的脚步，在这一段时光里，经历了很多事情也接触了不一样的人不一样的事物。 （由于时间匆忙，此处省略1000字，后续补上，晚安了各位~！） 2019余额不足且不允许充值，谢谢！ 2020年，朝新的目标奔跑！ 加油，自己！ .ε≡٩(๑&gt;₃&lt;)۶抱抱一直努力的自己，2019年拜拜，2020年你好！]]></content>
+      <categories>
+        <category>年终总结</category>
+      </categories>
+      <tags>
+        <tag>人生标记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[springboot RestFul接口跨域解决方法]]></title>
     <url>%2F2019%2F10%2F20%2Fspringboot-RestFul%E6%8E%A5%E5%8F%A3%E8%B7%A8%E5%9F%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[将spring boot以restful接口的方式对外提供服务的时候，如果此时架构是前后端分离的，那么就会涉及到跨域的问题。 1.局部添加注解方式1.1在controller层添加1@CrossOrigin 1.2在controller层的方法上添加注解12345678910@CrossOrigin(allowCredentials="true", allowedHeaders="*", methods=&#123;RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE,RequestMethod.OPTIONS,RequestMethod.HEAD,RequestMethod.PUT,RequestMethod.PATCH&#125;, origins="*") 例子如下： 12345678910111213@CrossOrigin // 注解方式@RestControllerpublic class HandlerScanController &#123; @CrossOrigin(allowCredentials="true", allowedHeaders="*", methods=&#123;RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.OPTIONS, RequestMethod.HEAD, RequestMethod.PUT, RequestMethod.PATCH&#125;, origins="*") @PostMapping("/confirm") public Response handler(@RequestBody Request json)&#123; return null; &#125; 2. 全局配置跨域方法2.1在WebMVC配置层配置代码如下： 123456789101112131415@Configuration public class MyConfiguration &#123; @Bean public WebMvcConfigurer corsConfigurer() &#123; return new WebMvcConfigurerAdapter() &#123; @Override public void addCorsMappings(CorsRegistry registry) &#123; registry.addMapping("/**") .allowCredentials(true) .allowedMethods("GET"); &#125; &#125;; &#125; &#125; 3.结合Filter使用解决跨域3.1在spring boot的主类中，增加一个CorsFilter代码如下： 123456789101112131415161718/** * * attention:简单跨域就是GET，HEAD和POST请求，但是POST请求的"Content-Type"只能是application/x-www-form-urlencoded, multipart/form-data 或 text/plain * 反之，就是非简单跨域，此跨域有一个预检机制，说直白点，就是会发两次请求，一次OPTIONS请求，一次真正的请求 */ @Bean public CorsFilter corsFilter() &#123; final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource(); final CorsConfiguration config = new CorsConfiguration(); config.setAllowCredentials(true); // 允许cookies跨域 config.addAllowedOrigin("*");// #允许向该服务器提交请求的URI，*表示全部允许，在SpringMVC中，如果设成*，会自动转成当前请求头中的Origin config.addAllowedHeader("*");// #允许访问的头信息,*表示全部 config.setMaxAge(18000L);// 预检请求的缓存时间（秒），即在这个时间段里，对于相同的跨域请求不会再预检了 config.addAllowedMethod("GET");// 允许提交请求的方法,*表示全部允许 source.registerCorsConfiguration("/**", config); return new CorsFilter(source); &#125; Over Ending（结束语）注:如果微服务多的话，需要在每个服务的主类上都加上这么段代码，这违反了DRY原则，更好的做法是在zuul的网关层解决跨域问题，一劳永逸。如果还有不了解的，可以在右下方与博主在线沟通]]></content>
@@ -199,8 +210,8 @@
         <category>工具</category>
       </categories>
       <tags>
-        <tag>Navicate</tag>
         <tag>工具</tag>
+        <tag>Navicate</tag>
       </tags>
   </entry>
   <entry>
